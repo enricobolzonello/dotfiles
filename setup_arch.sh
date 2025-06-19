@@ -22,7 +22,6 @@ packages=(
     "waybar"
     "grim"
     "slurp"
-    "grimblast-git"
     "cliphist"
     "wlogout"
     "thunar"
@@ -39,7 +38,11 @@ packages=(
     "brightnessctl"
     "networkmanager"
     "wireplumber"
+    "spotify-launcher"
+    "obsidian"
 )
+
+# todo: visual studio code setup
 
 _isInstalled() {
     package="$1"
@@ -87,6 +90,12 @@ for pkg in "${packages[@]}"; do
 	sudo pacman -S --needed "$pkg"
 done
 
+# cursor
 paru -S bibata-cursor-theme-bin
+
+# install grimblast for screenshots
+git clone git@github.com:hyprwm/contrib.git
+cd grimblast
+make && make install
 
 echo "Done"
