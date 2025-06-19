@@ -1,0 +1,10 @@
+[user]
+	email = enribolzonello@gmail.com
+	name = Enrico Bolzonello
+	signingkey = 30105BBEA65FAADD
+[commit]
+	gpgsign = false
+[tag]
+	gpgSign = true
+[init]
+	defaultBranch = main
