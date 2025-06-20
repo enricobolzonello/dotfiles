@@ -5,3 +5,6 @@
 - clone repo
 - set env variable HOSTNAME to macbook: https://derivative.ca/UserGuide/MacOS_Environment_Variables
 - run bootstrap.sh
+
+## TODO
+- [ ] nvim is a submodule, hence it doesnt clone

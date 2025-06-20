@@ -1,5 +1,7 @@
 source ~/.config/fish/conf.d/done.fish
 
+set -x LANG en_US.UTF-8
+
 # format man pages
 set -x MANROFFOPT "-c"
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
@@ -119,3 +121,4 @@ set -gx EDITOR nvim
 #end
 
 fish_add_path ~/.spicetify
+fish_add_path /opt/homebrew/bin
