@@ -7,4 +7,3 @@
 - run bootstrap.sh
 
 ## TODO
-- [ ] nvim is a submodule, hence it doesnt clone
