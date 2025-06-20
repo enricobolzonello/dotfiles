@@ -66,13 +66,6 @@ function ask_install() {
 
 }
 
-# Make sure only root can run our script
-if [ "$(id -u)" != "0" ]; then
-  echo "This script must be run as root"
-  echo "Plese use sudo or su"
-  exit 1
-fi
-
 sudo pacman -Sy
 
 ask_install "upgrade your system?"

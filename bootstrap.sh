@@ -47,6 +47,7 @@ stow general
 if [[ "$OS" == "Darwin" ]]; then
   echo "Symlinking 'macos' dotfiles..."
   stow macos
+  grep -qxF 'fish_add_path /opt/homebrew/bin' ~/.config/fish/config.fish || echo 'fish_add_path /opt/homebrew/bin' >> ~/.config/fish/config.fish
 elif [[ "$OS" == "Linux" ]]; then
   echo "Symlinking 'hyprland' dotfiles..."
   stow hyprland
