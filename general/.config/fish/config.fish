@@ -2,6 +2,15 @@ source ~/.config/fish/conf.d/done.fish
 
 set -x LANG en_US.UTF-8
 
+if test (uname) = "Darwin"
+    set -gx HOSTNAME "macbook"
+else if test (uname) = "Linux"
+    set -gx HOSTNAME "linux"
+else
+    set -gx HOSTNAME "unknown"
+end
+
+
 # format man pages
 set -x MANROFFOPT "-c"
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
@@ -12,7 +21,7 @@ set -U __done_notification_urgency_level low
 
 # environment setup
 if test -f ~/.fish_profile
-	source ~/.fish_profileì
+	source ~/.fish_profile
 end
 
 # add ~/.local/bin to PATH

@@ -12,6 +12,12 @@ echo ""
 echo -e "${COLOR_NO_COLOUR}"
 set -e
 
+# Check for stow-only flag
+STOW_ONLY=false
+if [[ "$1" == "--stow-only" ]]; then
+  STOW_ONLY=true
+fi
+
 # Get kernel and OS info
 OS="$(uname -s)"
 KERNEL="$(uname -r)"
@@ -20,6 +26,7 @@ echo "Detected OS: $OS"
 echo "Kernel: $KERNEL"
 
 # Run OS-specific installation script
+if [[ "$STOW-ONLY" == false ]]; then
 case "$OS" in
   "Darwin")
     echo "Running macOS setup..."
@@ -39,6 +46,9 @@ case "$OS" in
     exit 1
     ;;
 esac
+else
+	echo "Skipping package installation (stow-only mode)."
+fi
 
 # Symlink dotfiles using GNU Stow
 echo "Symlinking 'general' dotfiles..."
