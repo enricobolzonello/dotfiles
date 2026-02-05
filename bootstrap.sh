@@ -54,6 +54,9 @@ fi
 echo "Symlinking 'general' dotfiles..."
 stow general
 
+echo "Symlinking 'claude-code' dotfiles..."
+stow claude-code
+
 if [[ "$OS" == "Darwin" ]]; then
   echo "Symlinking 'macos' dotfiles..."
   stow macos

@@ -131,3 +131,5 @@ set -gx EDITOR nvim
 
 fish_add_path ~/.spicetify
 fish_add_path /opt/homebrew/bin
+
+set -gx PATH $HOME/Library/Python/3.9/bin $PATH

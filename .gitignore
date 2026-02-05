@@ -1,2 +1,8 @@
 hyprland/.config/ml4w/cache
 .DS_Store
+
+# Claude Code local settings (machine-specific)
+claude-code/.claude/settings.local.json
+
+# Fish universal variables (machine-specific paths)
+general/.config/fish/fish_variables
