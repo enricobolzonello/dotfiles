@@ -133,3 +133,5 @@ fish_add_path ~/.spicetify
 fish_add_path /opt/homebrew/bin
 
 set -gx PATH $HOME/Library/Python/3.9/bin $PATH
+
+set -gx BARTIB_FILE $HOME/activities.bartib

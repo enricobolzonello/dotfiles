@@ -1,7 +1,11 @@
 {
+  "env": {},
   "permissions": {
     "allow": [],
     "deny": []
   },
-  "env": {}
+  "enabledPlugins": {
+    "rust-analyzer-lsp@claude-plugins-official": true
+  },
+  "effortLevel": "high"
 }
