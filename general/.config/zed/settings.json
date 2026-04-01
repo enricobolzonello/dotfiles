@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
+  "disable_ai": false,
   "use_smartcase_search": true,
   "relative_line_numbers": "enabled",
   "base_keymap": "JetBrains",

@@ -135,3 +135,7 @@ fish_add_path /opt/homebrew/bin
 set -gx PATH $HOME/Library/Python/3.9/bin $PATH
 
 set -gx BARTIB_FILE $HOME/activities.bartib
+
+# Setting PATH for Python 3.9
+# The original version is saved in /Users/enricobolzonello/.config/fish/config.fish.pysave
+set -x PATH "/Library/Frameworks/Python.framework/Versions/3.9/bin" "$PATH"
