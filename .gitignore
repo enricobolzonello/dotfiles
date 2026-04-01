@@ -6,3 +6,12 @@ claude-code/.claude/settings.local.json
 
 # Fish universal variables (machine-specific paths)
 general/.config/fish/fish_variables
+
+# Python installer backups
+*.pysave
+
+# GitHub CLI credentials
+general/.config/gh/hosts.yml
+
+# Zed prompts database (binary, machine-specific)
+general/.config/zed/prompts/
