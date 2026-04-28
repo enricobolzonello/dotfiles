@@ -8,8 +8,7 @@ This is a dotfiles repository managed with [GNU Stow](https://www.gnu.org/softwa
 
 | Package | Target | Description |
 |---|---|---|
-| `general/` | `~` | Cross-platform configs: fish, nvim, tmux, kitty, git, etc. |
-| `claude-code/` | `~` | Claude Code settings, commands, keybindings, hooks |
+| `general/` | `~` | Cross-platform configs: fish, nvim, tmux, kitty, git, Claude Code, etc. |
 | `macos/` | `~` | macOS-only configs and Brewfile |
 | `hyprland/` | `~` | Linux/Arch Hyprland WM configs |
 
@@ -24,7 +23,6 @@ This is a dotfiles repository managed with [GNU Stow](https://www.gnu.org/softwa
 
 # Stow a single package manually
 stow general
-stow claude-code
 
 # macOS package installation only
 ./setup_macos.sh   # uses macos/Brewfile via brew bundle
@@ -39,7 +37,7 @@ stow claude-code
 - The `general/` package is always stowed; `macos/` is stowed on macOS, `hyprland/` on Linux.
 - `general/.config/fish/config.fish` sets `$HOSTNAME` to `"macbook"` or `"linux"` at runtime — some configs branch on this variable.
 - `general/.config/nvim/` is a git submodule pointing to an external neovim config repo.
-- `claude-code/.claude/` contains Claude Code settings (`settings.json`), custom slash commands (`commands/`), keybindings (`keybindings.json`), and hooks (`hooks.json`).
+- `general/.claude/` contains Claude Code settings (`settings.json`), custom slash commands (`commands/`), keybindings (`keybindings.json`), and hooks (`hooks.json`).
 
 ## Conventions
 

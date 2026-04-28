@@ -119,7 +119,6 @@ fi
 ## Stow dotfiles
 echo "Stowing dotfiles..."
 safe_stow general
-safe_stow claude-code
 
 if [[ "$OS" == "Darwin" ]]; then
   safe_stow macos
