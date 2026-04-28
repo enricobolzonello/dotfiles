@@ -10,3 +10,7 @@ chsh -s /opt/homebrew/bin/fish
 # install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env.fish"
+
+# apply macOS defaults
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+"$SCRIPT_DIR/mac-defaults.sh"
