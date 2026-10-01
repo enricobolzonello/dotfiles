@@ -3,6 +3,10 @@ hyprland/.config/ml4w/cache
 
 # Claude Code local settings (machine-specific)
 claude-code/.claude/settings.local.json
+general/.claude/cache
+general/.claude/backups
+general/.claude/plugins
+general/.claude/projects
 
 # Fish universal variables (machine-specific paths)
 general/.config/fish/fish_variables
